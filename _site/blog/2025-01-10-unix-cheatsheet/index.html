@@ -32,22 +32,22 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   
     
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>X Marks the Spot in Hydejack 9.2 | Starter Kit</title>
+<title>Shell Cheatsheet | Emily Lewis Dando</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="X Marks the Spot in Hydejack 9.2" />
+<meta property="og:title" content="Shell Cheatsheet" />
 <meta name="author" content="<firstname> <lastname>" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="This feature release adds new social media icons for 2024 and makes dark mode available to everyone." />
-<meta property="og:description" content="This feature release adds new social media icons for 2024 and makes dark mode available to everyone." />
-<meta property="og:site_name" content="Starter Kit" />
-<meta property="og:image" content="/assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg" />
+<meta name="description" content="A quick reference sheet for the basics of unix shell!" />
+<meta property="og:description" content="A quick reference sheet for the basics of unix shell!" />
+<link rel="canonical" href="http://localhost:4000/blog/2025-01-10-unix-cheatsheet/" />
+<meta property="og:url" content="http://localhost:4000/blog/2025-01-10-unix-cheatsheet/" />
+<meta property="og:site_name" content="Emily Lewis Dando" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-09-08T00:00:00+10:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="/assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg" />
-<meta property="twitter:title" content="X Marks the Spot in Hydejack 9.2" />
+<meta property="article:published_time" content="2025-01-10T00:00:00+11:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Shell Cheatsheet" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"<firstname> <lastname>"},"dateModified":"2025-01-30T22:42:16+11:00","datePublished":"2024-09-08T00:00:00+10:00","description":"This feature release adds new social media icons for 2024 and makes dark mode available to everyone.","headline":"X Marks the Spot in Hydejack 9.2","image":{"srcset":{"1920w":"/assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg","960w":"/assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash@0,5x.jpg","480w":"/assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash@0,25x.jpg"},"url":"/assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"/example/2024-09-08-x-marks-the-spot-in-hydejack-9-2/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo.png"},"name":"<firstname> <lastname>"},"url":"/example/2024-09-08-x-marks-the-spot-in-hydejack-9-2/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"<firstname> <lastname>"},"dateModified":"2025-02-04T13:12:34+11:00","datePublished":"2025-01-10T00:00:00+11:00","description":"A quick reference sheet for the basics of unix shell!","headline":"Shell Cheatsheet","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2025-01-10-unix-cheatsheet/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"},"name":"<firstname> <lastname>"},"url":"http://localhost:4000/blog/2025-01-10-unix-cheatsheet/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -57,7 +57,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 
 
 
-  <meta name="color-scheme" content="dark light">
+  <meta name="color-scheme" content="light">
 
 
 
@@ -71,17 +71,17 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Starter Kit">
+<meta name="apple-mobile-web-app-title" content="Emily Lewis Dando">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
-<meta name="application-name" content="Starter Kit">
+<meta name="application-name" content="Emily Lewis Dando">
 
 <meta name="generator" content="Hydejack v9.2.1" />
 
 
-<link rel="alternate" href="/example/2024-09-08-x-marks-the-spot-in-hydejack-9-2/" hreflang="en">
+<link rel="alternate" href="http://localhost:4000/blog/2025-01-10-unix-cheatsheet/" hreflang="en">
 
-<link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Starter Kit" />
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Emily Lewis Dando" />
 
 
 <link rel="shortcut icon"    href="/assets/icons/favicon.ico">
@@ -118,7 +118,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-01-30T23:17:38+11:00',
+    INDEX_KEY: 'index--2025-02-04T13:43:16+11:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -196,13 +196,6 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
 <body class="no-break-layout">
   
-<script>
-  window._sunrise = 6;
-  window._sunset =  18;
-  ((e,s)=>{var d="light-mode",a="dark-mode",o=(new Date).getHours();"matchMedia"in e&&e.matchMedia("(prefers-color-scheme)")||(e=(o=o<=e._sunrise||o>=e._sunset?a:d)==a?d:a,s.body.classList.add(o),s.body.classList.remove(e))})(window,document);
-
-</script>
-
 
 
 <hy-push-state
@@ -244,14 +237,14 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
           <span>/</span>
           
           
-          <a href="/example/">example</a>
+          <a href="/blog/">blog</a>
         
       </li>
     
       <li>
         
           <span>/</span>
-          <span>2024-09-08-x-marks-the-spot-in-hydejack-9-2</span>
+          <span>2025-01-10-unix-cheatsheet</span>
         
       </li>
     
@@ -268,60 +261,23 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
 
 
-<article id="post-example-x-marks-the-spot-in-hydejack-9-2" class="page post mb6" role="article">
+<article id="post-blog-unix-cheatsheet" class="page post mb6" role="article">
   <header>
     <h1 class="post-title flip-project-title">
       
-        X Marks the Spot in Hydejack 9.2
+        Shell Cheatsheet
       
     </h1>
 
     <div class="post-date">
       
       <span class="ellipsis mr1">
-        <time datetime="2024-09-08T00:00:00+10:00">08 Sep 2024</time> in <a href="/example/" class="flip-title">Example</a> 
+        <time datetime="2025-01-10T00:00:00+11:00">10 Jan 2025</time> in <span>Blog</span> 
       </span>
-      
-        
-          
-          
-          
-            
-            
-            <span class="ellipsis" data-tippy-content="Last modified at: 30 Jan 2025">
-              <span class="sr-only">Last modified at:</span>
-              <span class="icon-history"></span>
-              <time datetime="2025-01-30T22:42:16+11:00">2025-01-30</time>
-            </span>
-          
-        
       
     </div>
 
     
-    
-      
-        <div class="img-wrapper lead aspect-ratio sixteen-nine flip-project-img">
-          
-
-
-<img
-  
-    src="/assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg"
-    srcset="/assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg 1920w,/assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash@0,5x.jpg 960w,/assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash@0,25x.jpg 480w"
-    
-  
-  alt="X Marks the Spot in Hydejack 9.2"
-  
-  
-  width="864"
-  height="486"
-  loading="lazy"
-/>
-
-        </div>
-      
-      
     
 
     
@@ -330,7 +286,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
   
     <p class="note-sm" >
-      This feature release adds new social media icons for 2024 and makes dark mode available to everyone.
+      A quick reference sheet for the basics of unix shell!
 
     </p>
   
@@ -339,112 +295,70 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
   </header>
 
   
-    <h2 id="new-social-media-icons">New Social Media Icons</h2>
+    <h6 id="print-statements">print statements</h6>
+<pre><code class="language-run-shell">echo (-n: don't print newline) "message" #prints message
+</code></pre>
+<h6 id="filtering">filtering</h6>
+<pre><code class="language-run-shell">grep (-v: select everything not including the following) (-E extended regex) (-o: print all occurences of matching pattern) (-c count number of lines matching) [pattern] [filename] #filters [filename] for [pattern]
+</code></pre>
+<pre><code class="language-run-shell">#grep and strings
+right=hello
+wrong=bye
+echo $right | grep -E "^h"
+echo $wrong | grep -E "^h" #won't print if it does not match the condition
+</code></pre>
+<h6 id="word-counts">word counts</h6>
+<pre><code class="language-run-shell">wc (-n: omit newline) (-c: bytecount) (-l: count lines) (-m: count chars) [file/string] #counts (byte/lines/chars/etc) of [file/string]
+</code></pre>
+<h6 id="sorting">sorting</h6>
+<pre><code class="language-run-shell">sort (-n: sort by numerical) (-r: desc) 
+head (-5) [file] #print first 5 lines
+tail (-5) [file] #print last 5 lines
+</code></pre>
+<h6 id="user-input">user input</h6>
+<pre><code class="language-run-shell">read (-p: add message) "message" [variable_name] #saves user response to "message" to [variable_name]
+echo $variable_name
+</code></pre>
+<h6 id="arithmetic">arithmetic</h6>
+<pre><code class="language-run-shell">#base shell
+expr \( 4 + 2 - 3 \) \* 5 
+echo "$(expr \( 4 + 2 - 3 \) \* 5)" #prints it
 
-<p>Lots of things have changed in the world of social media since the last release. To bring Hydejack up to date, the default logo for Twitter has changed:</p>
+declare (-i: integer type) (-r: readonly) [variable_name]=4 #set integer type variable - try to set it to string later and it will be set to 0
 
-<p class="larger"><span class="icon-twitter-old"></span> → <span class="icon-twitter"></span></p>
+answer=`expr 5 + 5` #command substitution - set variable to product of commands
+</code></pre>
+<pre><code class="language-run-shell">#bash specific
+answer=$(( (4+2-3)*5 )) #math operations
+echo $answer
+</code></pre>
+<h6 id="regex">regex</h6>
+<pre><code class="language-run-shell">#basic conditions
+grep (-E: doesn't require backslashes) "^ex|er$" [filename] #begins with ex OR ends with er
 
-<!--more-->
+grep -E "^[Ff][0-9]" [filename] #starts with F or F then anything from 0-9 (e.g F9, f5)
 
-<ul class="large-only" id="markdown-toc">
-  <li><a href="#new-social-media-icons" id="markdown-toc-new-social-media-icons">New Social Media Icons</a></li>
-  <li><a href="#dark-mode-is-now-free" id="markdown-toc-dark-mode-is-now-free">Dark Mode is Now Free</a></li>
-  <li><a href="#updated-docs" id="markdown-toc-updated-docs">Updated Docs</a></li>
-  <li><a href="#google-fonts-off-by-default" id="markdown-toc-google-fonts-off-by-default">Google Fonts Off by Default</a></li>
-</ul>
+grep -E -v "[[:digit:]][[:punct:]]" [filename] #doesnt include digit/punctuation
 
-<p class="note smaller">If you prefer the old Twitter logo, you can use it through <code class="language-plaintext highlighter-rouge">twitter-old</code>.</p>
+[[:alpha:]] #any uppercase or lowercase english letter
+[[:upper:]] #lowercase english letters
+[[:digit:]] #0-9
+[[:alnum:]] #alpha or digit
+[[:xdigit:]] # digit or upper/lower [a:f]
+[[:punct:]] #punctutation
+. # any character
+"e$" #end in e
+"^e" #start with e
+</code></pre>
 
-<p>There are also many new social media networks, some of which are now included by default:</p>
+<h6 id="working-with-csv">working with csv</h6>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Name</th>
-      <th>Icon</th>
-      <th style="text-align: left">Name</th>
-      <th>Icon</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">signal</td>
-      <td><span class="larger icon-signal"></span></td>
-      <td style="text-align: left">threads</td>
-      <td><span class="larger icon-threads"></span></td>
-    </tr>
-    <tr>
-      <td style="text-align: left">playstation</td>
-      <td><span class="larger icon-playstation"></span></td>
-      <td style="text-align: left">messenger</td>
-      <td><span class="larger icon-messenger"></span></td>
-    </tr>
-    <tr>
-      <td style="text-align: left">stripe</td>
-      <td><span class="larger icon-stripe"></span></td>
-      <td style="text-align: left">slack</td>
-      <td><span class="larger icon-slack"></span></td>
-    </tr>
-    <tr>
-      <td style="text-align: left">gitlab</td>
-      <td><span class="larger icon-gitlab"></span></td>
-      <td style="text-align: left">line</td>
-      <td><span class="larger icon-line"></span></td>
-    </tr>
-    <tr>
-      <td style="text-align: left">medium</td>
-      <td><span class="larger icon-medium"></span></td>
-      <td style="text-align: left">xbox</td>
-      <td><span class="larger icon-xbox"></span></td>
-    </tr>
-    <tr>
-      <td style="text-align: left">wechat</td>
-      <td><span class="larger icon-wechat"></span></td>
-      <td style="text-align: left">discord</td>
-      <td><span class="larger icon-discord"></span></td>
-    </tr>
-    <tr>
-      <td style="text-align: left">mastodon</td>
-      <td><span class="larger icon-mastodon"></span></td>
-      <td style="text-align: left">twitter</td>
-      <td><span class="larger icon-twitter"></span></td>
-    </tr>
-  </tbody>
-</table>
+<pre><code class="language-run-shell">cut (-d - delimiter) , (-f - select certain fields) 3-4 #cut out the 3rd and 4th field separated by commas
 
-<p>If your perferred network is missing, note that you can always <a href="/docs/advanced/#adding-a-custom-social-media-icon">follow the steps to add custom icons</a> from the docs, which is what I did for this release.</p>
-
-<h2 id="dark-mode-is-now-free">Dark Mode is Now Free</h2>
-<p>When I first added dark mode to Hydejack it was still considered a novelty. 
-Unity, a popular game engine, was limiting dark mode to its paid version at the time — a model that I’ve adopted for Hydejack. 
-Today, dark mode is considered a minimal requirement for any new theme and to reflect that reality, 
-starting with Hydejack 9.2, dark mode is included in all versions of Hydejack.</p>
-
-<h2 id="updated-docs">Updated Docs</h2>
-<p>The documentation has been updated with a focus on deployment via GitHub Actions and CI pipelines. 
-I’ve added a chapter on how to <a href="/docs/deploy/" class="heading flip-title">Deploy</a> and updated many of the existing chapters.</p>
-
-<p>The deployment experience for <strong>PRO customers</strong> has also been improved. You are now automatically added to a “PRO Customers” team on GitHub if you provide a GitHub username during checkout (existing customers can request an invite through <a href="mailto:mail@hydejack.com">mail@hydejack.com</a>).
-Members of this team have read access to the pro repository, which allows the theme to be fetched during a CI run. 
-For detail, check out the new <a href="/docs/deploy/" class="heading flip-title">Deploy</a> chapter.</p>
-
-<h2 id="google-fonts-off-by-default">Google Fonts Off by Default</h2>
-<p>Google Fonts are now turned off by default in the starter kits, but remain in use on hydejack.com for visual continuity. All associated options continue to work as they did before. Only new users have to enable them in the config file if they want to match the look of hydejack.com.</p>
-
-<p>The reason for this change is that sensibilities around privacy have changed in recent years. 
-No Google product feels appropriate as a default option for an ownership and self-hosting oriented product like Hydejack.</p>
-
-<p>To restore the old look that matches hydejack.com, add the following to your <code class="language-plaintext highlighter-rouge">_config.yml</code> file:</p>
-
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">google_fonts</span><span class="pi">:</span>          <span class="s">Roboto+Slab:700|Noto+Sans:400,400i,700,700i</span>
-<span class="na">font</span><span class="pi">:</span>                  <span class="s">Noto Sans, Helvetica, Arial, sans-serif</span>
-<span class="na">font_heading</span><span class="pi">:</span>          <span class="s">Roboto Slab, Helvetica, Arial, sans-serif</span>
-</code></pre></div></div>
-
-<p>On a related note, I’ve also decided against updating the included Google Analytics script, in part because the upgrade path is incomprehensible, but also due the the same privacy concerns that make Google Fonts a bad default option. I recommend independent analytics services like 
-<a href="https://plausible.io">Plausible</a>, <a href="https://matomo.org/">Matomo</a> or maybe even <a href="https://counterscale.dev">Counterscale</a> (if you are a Cloudflare customer).
-You can include the tracking scripts by <a href="/docs/basics/#adding-custom-html-to-the-head">adding them as custom HTML</a>.</p>
+#returns unique values - NOTE: must sort before passing into the command
+uniq (-c: returns distinct values + number of occurences)
+uniq myfile # will take the first value if there are multiple
+</code></pre>
 
   
 </article>
@@ -573,8 +487,6 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
     
 
 
-  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/example/2020-07-03-introducing-hydejack-9/" class="flip-title"><span>Introducing Hydejack 9</span></a>  <time class="faded fine" datetime="2020-07-03T00:00:00+10:00">03 Jul 2020</time></li>                        <li class="h4">  <a href="/example/2018-06-01-example-content-iii/" class="flip-title"><span>Example Content III</span></a>  <time class="faded fine" datetime="2018-06-01T00:00:00+10:00">01 Jun 2018</time></li>                        <li class="h4">  <a href="/example/2017-11-23-example-content-ii/" class="flip-title"><span>Example Content II</span></a>  <time class="faded fine" datetime="2017-11-23T00:00:00+11:00">23 Nov 2017</time></li>            </ul></aside>
-
   
 
   
@@ -590,7 +502,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 <footer class="content" role="contentinfo">
   <hr/>
   
-    <p><small class="copyright">© 2024. All rights reserved.
+    <p><small class="copyright">© 2025. All rights reserved.
 </small></p>
   
   
@@ -631,20 +543,20 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
 
-<div class="sidebar-bg sidebar-overlay" style="background-color:rgb(25,55,71);background-image:url(/assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg)"></div>
+<div class="sidebar-bg sidebar-overlay" style="background-color:rgb(25,55,71);background-image:url(/assets/img/sidebar-bg.jpg)"></div>
 
     <div class="sidebar-sticky">
   <div class="sidebar-about">
     
       <a class="no-hover" href="/" tabindex="-1">
-        <img src="/assets/img/logo.png" class="avatar" alt="Starter Kit" width="120" height="120" loading="lazy" />
+        <img src="/assets/img/logo.png" class="avatar" alt="Emily Lewis Dando" width="120" height="120" loading="lazy" />
       </a>
     
-    <a class="sidebar-title" href="/"><h2 class="h1">Starter Kit</h2></a>
+    <a class="sidebar-title" href="/"><h2 class="h1">Emily Lewis Dando</h2></a>
     
     
       <p class="">
-        Love chumba times 69 milly
+        Incoming Data Science and Statistics / Law graduate from the University of Sydney - A Portfolio.
 
       </p>
     
@@ -659,11 +571,11 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
       <li>
         <a
           id="_drawer--opened"
-          href="/example/"
+          href="/blog/"
           class="sidebar-nav-item "
           
         >
-          Example
+          Blog
         </a>
       </li>
     
@@ -683,11 +595,11 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
       <li>
         <a
           
-          href="/about/"
+          href="/resume/"
           class="sidebar-nav-item "
           
         >
-          About
+          Resume
         </a>
       </li>
     
@@ -867,14 +779,6 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
     <span class="sr-only">Permalink</span>
     <span class="content-hash"></span>
   </a>
-</template>
-
-  
-    <template id="_dark-mode-template">
-  <button id="_dark-mode" class="nav-btn no-hover" >
-    <span class="sr-only">Dark Mode</span>
-    <span class="icon-brightness-contrast"></span>
-  </button>
 </template>
 
   

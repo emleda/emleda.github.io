@@ -20,16 +20,15 @@
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Starter Kit
+title:                 Emily Lewis Dando
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  Give me a job. 
 
 # A shorter description for the sidebar.
-tagline:               Love chumba times 69 milly
+tagline:               Incoming Data Science and Statistics / Law graduate from the University of Sydney - A Portfolio.
 
 # A list of keywords for your blog
 keywords:              []
@@ -49,12 +48,12 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
-    url:               /example/
+  - title:             Blog
+    url:               /blog/
   - title:             Documentation
     url:               /docs/
-  - title:             About
-    url:               /about/
+  - title:             Resume
+    url:               /resume/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -67,7 +66,7 @@ legal:
     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2024. All rights reserved.
+copyright:             © 2025. All rights reserved.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
@@ -267,10 +266,10 @@ hydejack:
     always:            false
 
     # Set to `true` to use the dark theme based on visitors' preference (OS setting).
-    dynamic:           true
+    dynamic:           false
 
     # Set to `true` to allow visitors to switch between light and dark mode.
-    icon:              true
+    icon:              false
 
   # ⚡️ DANGER ZONE ⚡️
   # ----------------
