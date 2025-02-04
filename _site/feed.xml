@@ -1,5 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-02-04T13:43:16+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Emily Lewis Dando</title><subtitle>Give me a job. 
-</subtitle><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><entry><title type="html">Shell Cheatsheet</title><link href="http://localhost:4000/blog/2025-01-10-unix-cheatsheet/" rel="alternate" type="text/html" title="Shell Cheatsheet" /><published>2025-01-10T00:00:00+11:00</published><updated>2025-02-04T13:12:34+11:00</updated><id>http://localhost:4000/blog/unix-cheatsheet</id><content type="html" xml:base="http://localhost:4000/blog/2025-01-10-unix-cheatsheet/"><![CDATA[<h6 id="print-statements">print statements</h6>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-02-04T14:43:48+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Emily Lewis Dando</title><subtitle>Give me a job. 
+</subtitle><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><entry><title type="html">Probability Basics</title><link href="http://localhost:4000/blog/2025-02-02-Probability-Basics/" rel="alternate" type="text/html" title="Probability Basics" /><published>2025-02-02T00:00:00+11:00</published><updated>2025-02-03T19:28:35+11:00</updated><id>http://localhost:4000/blog/Probability-Basics</id><content type="html" xml:base="http://localhost:4000/blog/2025-02-02-Probability-Basics/"><![CDATA[<p>Probability has never felt intuitive to me, however in undergoing a degree in Data Science and Statistics, it must become intuitive. I have compiled a few key areas of probability and counting to serve as guiding principles when dealing with probability.</p>
+
+<h3 id="key-rules">Key rules</h3>
+<h3 id="binomial-distributions">Binomial Distributions</h3>
+<ul>
+  <li>Requirements
+    <ul>
+      <li>Always with replacement</li>
+      <li>Must have binary outcomes for each trial</li>
+      <li>Must know number of trials</li>
+      <li>Probability does not change over time</li>
+    </ul>
+  </li>
+  <li>Data
+    <ul>
+      <li>$n$: The number of trials</li>
+      <li>$p$: Probability of 1 success</li>
+      <li>$1-p$: Probability of 1 failure</li>
+      <li>$x$: Number of successes</li>
+    </ul>
+  </li>
+  <li>Parameters
+    <ul>
+      <li>EV of Sum: $n\cdot p$</li>
+      <li>SE of Sum: $\sqrt{n\cdot p \cdot (1-p)}$</li>
+    </ul>
+  </li>
+  <li>Formula
+    <ul>
+      <li>$P(X=x) ={n \choose x}p^x(1-p)^{n-x}$
+        <ul>
+          <li>$p^x(1-p)^{n-x}$: Say that we are rolling a dice. We want to know the probability that we roll ‘3’ twice out of 5 rolls. This part of the equation tells us, what is the chance that we win (roll 3) 2 times and fail 3 times. It is like saying $(P(succeed) \cdot 2)\cdot(P(fail) \cdot 3)$. But, this only tells us the chance of it happening in one way: succeed, succeed, fail, fail, fail. Now we need to find the probability for all possible combinations.</li>
+          <li>${n\choose x}$: See <em>Counting - Combinations</em> for more explanation - this gives the total number of ways for $x$ successes out of $n$ trials. When we multiply the probability we calculated in the step above, then we have the probability of this combination of events happening, multiplied by the number of ways (ordering) it can happen. The formula is $\frac{n!}{(n-x)!x!}$.
+            <h3 id="counting">Counting</h3>
+            <h4 id="combinations">Combinations</h4>
+            <h4 id="permutations">Permutations</h4>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>]]></content><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="blog" /><summary type="html"><![CDATA[Probability has never felt intuitive to me, however in undergoing a degree in Data Science and Statistics, it must become intuitive. I have compiled a few key areas of probability and counting to serve as guiding principles when dealing with probability.]]></summary></entry><entry><title type="html">Shell Cheatsheet</title><link href="http://localhost:4000/blog/2025-01-10-unix-cheatsheet/" rel="alternate" type="text/html" title="Shell Cheatsheet" /><published>2025-01-10T00:00:00+11:00</published><updated>2025-02-04T13:44:51+11:00</updated><id>http://localhost:4000/blog/unix-cheatsheet</id><content type="html" xml:base="http://localhost:4000/blog/2025-01-10-unix-cheatsheet/"><![CDATA[<h6 id="print-statements">print statements</h6>
 <pre><code class="language-run-shell">echo (-n: don't print newline) "message" #prints message
 </code></pre>
 <h6 id="filtering">filtering</h6>
