@@ -2,9 +2,6 @@
 layout: about
 title: Resume
 sitemap: false
-description: >
-  A boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
 hide_description: true
 
 ---
@@ -24,7 +21,6 @@ WAM: 81
 **Merchandise Administrator**  
 *Hermes* $$\cdot$$ Nov 2021 - May 2024
   
-  
 **Data Analyst**  
 *Data Annotation* $$\cdot$$ April 2024 - Present
 
@@ -35,3 +31,7 @@ WAM: 81
 *Seven-Eleven Japan* $$\cdot$$ Jan 2020 - May 2020
 
 ## Skills and Accomplishments
+- **2nd Place - Winter Data Analysis Challenge 2024** $$\cdot$$ *Sydney Precision Data Centre*
+- **Technical**: Python, R, Unix Shell, SQL, Tableau, Power BI, Advanced Excel
+- **Language**: Conversational French, Japanese
+
