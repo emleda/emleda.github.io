@@ -52,7 +52,7 @@ menu:
     url:               /blog/
   - title:             Documentation
     url:               /docs/
-  - title:             Resume
+  - title:             resume
     url:               /resume/
 
 # Add links to the footer.
