@@ -53,7 +53,7 @@ menu:
   - title:             Documentation
     url:               /docs/
   - title:             Resume
-    url:               /resume/
+    url:               /resume.md
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
