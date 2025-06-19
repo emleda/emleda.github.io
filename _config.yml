@@ -50,8 +50,8 @@ author:
 menu:
   - title:             Blog
     url:               /blog/
-  - title:             Documentation
-    url:               /docs/
+  - title:             Portfolio
+    url:               /portfolio/
   - title:             Resume
     url:               /resume/
 

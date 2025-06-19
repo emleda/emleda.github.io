@@ -6,8 +6,6 @@ hide_description: true
 
 ---
 
-# HI CHUMBA!!
-
 <!--author-->
 
 ## Education
